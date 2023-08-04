@@ -1,0 +1,87 @@
+- name: TerraTales Ansible
+  hosts: local
+  # Do not change this. Most of these tasks require root privs.  
+  remote_user: root
+  vars_files:
+  #The Full Path for the Variable File. This needs to be changed for each install. 
+    - /home/example/ExampleAnsible/vars.yml
+  tasks:
+    - name: Init
+      community.general.discord:
+        webhook_id: '{{ webhookid }}'
+        webhook_token: '{{ webhooktoken }}'
+        content: 'Starting Ansible Tasks on {{ server_name }}'
+    - name: Check Internal Connectivity
+      ansible.builtin.ping:
+    - name: Check Nginx Pterodactyl Status.
+      ansible.builtin.service:
+        name: nginx
+        state: started
+    - name: Nginx Clear.  
+      community.general.discord:
+        webhook_id: '{{ webhookid }}'
+        webhook_token: '{{ webhooktoken }}'
+        content: 'NGINX Check.'
+    - name: Check Wings Status.
+      ansible.builtin.service:
+        name: wings
+        state: started
+    - name: Wings Clear.      
+      community.general.discord:
+        webhook_id: '{{ webhookid }}'
+        webhook_token: '{{ webhooktoken }}'
+        content: 'Wings Check.' 
+    - name: Halt Live Server.
+      shell: 'php /var/www/pterodactyl/artisan p:server:bulk-power -n --servers={{ pterodactyl_internal_id }} stop'
+      register: "output"
+    - name: Halt Clear.    
+      community.general.discord:
+        webhook_id: '{{ webhookid }}'
+        webhook_token: '{{ webhooktoken }}'
+        content: 'Halted Server Via Artisan.' 
+    - name: Checking Git Pkg
+      apt:
+        name: git
+    - name: Pull Live Git Repository. (Should Avoid Auth Status Hang)
+      git:
+        # The below line will need to be changed according to your Github User/Org and Repository.
+        repo: 'https://{{git_user}}:{{git_pac}}@github.com/TerraTales-RP/ExampleAnsible.git'
+        dest: '{{ live_ansible_path}}'
+    - name: Pull Clear.
+      community.general.discord:
+        webhook_id: '{{ webhookid }}'
+        webhook_token: '{{ webhooktoken }}'
+        content: 'Pulled Git Repository.'
+    - name: Clear Plugins Only Jars
+      shell: 'rm /var/lib/pterodactyl/volumes/{{pterodactyl_server_uuid}}/plugins/*.jar'
+      ignore_errors: true      
+    - name: Copy Plugins to Live.
+      ansible.posix.synchronize:
+        recursive: true  
+        src: '{{ live_ansible_path}}/plugins/'
+        dest: '/var/lib/pterodactyl/volumes/{{ pterodactyl_server_uuid }}/plugins'
+    - name: Synced Plugin Binaries  
+      community.general.discord:
+        webhook_id: '{{ webhookid }}'
+        webhook_token: '{{ webhooktoken }}'
+        content: 'Synchronized Plugin Binaries.'   
+    - name: Copy Plugin Configurations to Live.
+      ansible.posix.synchronize:
+        recursive: true
+        delete: false  
+        src: '{{ live_ansible_path}}/configs/'
+        dest: '/var/lib/pterodactyl/volumes/{{ pterodactyl_server_uuid }}/plugins'
+    - name: Synced Plugin Configs.  
+      community.general.discord:
+        webhook_id: '{{ webhookid }}'
+        webhook_token: '{{ webhooktoken }}'
+        content: 'Synchronized Plugin Configurations.'
+    - name: Start Live Server.
+      shell: 'php /var/www/pterodactyl/artisan p:server:bulk-power -n --servers={{ pterodactyl_internal_id }} start'
+      register: "output"   
+    - name: Tasks Finished.  
+      community.general.discord:
+        webhook_id: '{{ webhookid }}'
+        webhook_token: '{{ webhooktoken }}'
+        content: 'Ansible Tasks Cleared on {{ server_name }}'  
+    - debug: var=output.stdout_lines      

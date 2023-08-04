@@ -1,0 +1,15 @@
+# This can be located on the Pterodactyl Panel.
+pterodactyl_server_uuid: 'SERVER_PANEL_UUID'
+# This can be located on the panel as well.
+pterodactyl_internal_id: 'SERVER_PANEL_INTERNAL_ID'
+# The directory this is being ran from.
+live_ansible_path: '/home/example/LiveAnsible'
+#GitHub User and Personal Access Token to access the GitHub Repository.
+git_user: 'SquidLover420'
+# This only needs read & write permissions.
+git_pac: 'github_pat_EXXXXXXXX'
+#Discord Functionality, Webhook ID & Token for Log Output.
+webhookid: ''
+webhooktoken: ''
+#The Server Name
+server_name: ''

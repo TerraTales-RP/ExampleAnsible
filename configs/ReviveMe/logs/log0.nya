@@ -1,0 +1,73 @@
+Jul 25,2023 09:19:-> =========REVIVEME ENABLED=========
+Jul 25,2023 09:19:-> =========REVIVEME DISABLED=========
+Jul 25,2023 09:33:-> =========REVIVEME ENABLED=========
+Jul 25,2023 13:48:-> =========REVIVEME DISABLED=========
+Jul 25,2023 13:48:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:31:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:31:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:31:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:33:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:34:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:34:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:35:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:37:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:40:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:40:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:40:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:43:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:43:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:43:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:44:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:48:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:50:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:50:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:53:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:53:-> =========REVIVEME ENABLED=========
+Jul 25,2023 14:55:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:55:-> =========REVIVEME ENABLED=========
+-------------------------[set downed]-----------------------
+Jul 25,2023 14:56:-> player:Laika0xC1 reason:2 0.8422418712233303
+Jul 25,2023 14:56:-> healt:20.0 max_health:20.0 speed:0.2
+Jul 25,2023 14:56:-> current_speed:0.04 next_speed:0.2
+Jul 25,2023 14:56:-> speed_changed_to:0.2 edited:false
+-------------------------[set stand]-----------------------
+Jul 25,2023 14:56:-> player:Laika0xC1 reason:Death. code: 004
+Jul 25,2023 14:56:-> current_speed:0.2 next_speed:0.2
+Jul 25,2023 14:56:-> speed_changed_to:0.2 edited:false
+Jul 25,2023 14:57:-> =========REVIVEME DISABLED=========
+Jul 25,2023 14:57:-> =========REVIVEME ENABLED=========
+-------------------------[set downed]-----------------------
+Jul 25,2023 14:58:-> player:Laika0xC1 reason:2 0.2295565553004426
+Jul 25,2023 14:58:-> healt:10.0 max_health:20.0 speed:0.2
+Jul 25,2023 14:58:-> current_speed:0.04 next_speed:0.2
+Jul 25,2023 14:58:-> speed_changed_to:0.2 edited:false
+-------------------------[set stand]-----------------------
+Jul 25,2023 14:58:-> player:Laika0xC1 reason:Death. code: 004
+Jul 25,2023 14:58:-> current_speed:0.2 next_speed:0.2
+Jul 25,2023 14:58:-> speed_changed_to:0.2 edited:false
+Jul 25,2023 15:00:-> =========REVIVEME DISABLED=========
+Jul 25,2023 15:01:-> =========REVIVEME ENABLED=========
+-------------------------[set downed]-----------------------
+Jul 25,2023 15:01:-> player:Laika0xC1 reason:2 0.516025567906882
+Jul 25,2023 15:01:-> healt:20.0 max_health:20.0 speed:0.2
+Jul 25,2023 15:01:-> current_speed:0.04 next_speed:0.2
+Jul 25,2023 15:01:-> speed_changed_to:0.2 edited:false
+-------------------------[set stand]-----------------------
+Jul 25,2023 15:01:-> player:Laika0xC1 reason:Death. code: 004
+Jul 25,2023 15:01:-> current_speed:0.2 next_speed:0.2
+Jul 25,2023 15:01:-> speed_changed_to:0.2 edited:false
+Jul 25,2023 15:02:-> =========REVIVEME DISABLED=========
+Jul 25,2023 15:03:-> =========REVIVEME ENABLED=========
+-------------------------[set downed]-----------------------
+Jul 25,2023 15:03:-> player:Laika0xC1 reason:2 0.9543306043424001
+Jul 25,2023 15:03:-> healt:20.0 max_health:20.0 speed:0.2
+Jul 25,2023 15:03:-> current_speed:0.04 next_speed:0.2
+Jul 25,2023 15:03:-> speed_changed_to:0.2 edited:false
+-------------------------[set stand]-----------------------
+Jul 25,2023 15:03:-> player:Laika0xC1 reason:Death. code: 004
+Jul 25,2023 15:03:-> current_speed:0.2 next_speed:0.2
+Jul 25,2023 15:03:-> speed_changed_to:0.2 edited:false
+Jul 25,2023 15:04:-> =========REVIVEME DISABLED=========
+Jul 25,2023 15:05:-> =========REVIVEME ENABLED=========
+Jul 25,2023 16:26:-> =========REVIVEME DISABLED=========
+Jul 25,2023 16:26:-> =========REVIVEME ENABLED=========

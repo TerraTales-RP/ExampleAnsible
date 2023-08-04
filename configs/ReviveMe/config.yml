@@ -1,0 +1,185 @@
+player_config:
+  downed_speed: 0.04
+  death_delay: 75
+  reliving_count: 10
+  invulnerability_delay: 15
+  totem_first: true
+  enabled_totem: true
+  suicide_enable: true
+  suicide_count: 5
+  revived_health: 4.0
+  downed_health: 0.5
+  steal_items: false
+  reliving_distance_min: 1.3
+  reliving_distance_max: 5.0
+  mobs_target_downed: false
+  downed_can_dismount_picker: false
+  check_nearby_players_before_downing: false
+  check_nearby_players_range: 100
+  picked_enable: true
+  picked_damage_drop: false
+  death_count_action: kill
+  disconnect_kill: true
+  downed_keep_inventory: false
+  hide_nametag: false
+  suicide_disabled_count: 0
+  pickup_interact: click
+  steal_interact: crounch+click
+  dismount_bug: false
+  start_revive_cooldown: 0
+  cooldown_revive_again: 0
+  invulnerability_with_mobs: true
+worlds_config:
+  enabled: false
+  mode: WhiteList
+  list:
+  - world1
+  - world2
+  - world3
+commands_config:
+  enabled: true
+  mode: BlackList
+  list:
+  - sethome
+  - createhome
+  - tphere
+  - tpa
+  - tpaccept
+  - tpyes
+  - tpa
+sound_config:
+  start_reliving:
+    sound: BLOCK_NOTE_BLOCK_HARP
+    volume: 1.0
+    yaw: 1.0
+  reliving:
+    sound: BLOCK_NOTE_BLOCK_HARP
+    volume: 1.0
+    yaw: 1.0
+  stop_reliving:
+    sound: BLOCK_NOTE_BLOCK_HARP
+    volume: 1.0
+    yaw: 1.0
+  sucess_relive:
+    sound: ENTITY_MAGMA_CUBE_JUMP
+    volume: 1.0
+    yaw: 1.0
+  suicide_count:
+    sound: BLOCK_NOTE_BLOCK_BIT
+    volume: 1.0
+    yaw: 1.0
+damages_type:
+  enabled: true
+  mode: BlackList
+  list:
+  - void
+plugins_hooks:
+  Citizens:
+    enable: false
+    downedNpc: false
+  CrackShot:
+    enable: false
+    downed_use_weapon: false
+  QualityArmory:
+    enable: false
+    downed_use_weapon: false
+  SaberFactions:
+    enable: false
+    pickup_only_member: true
+    revive_only_member: true
+    ignore_permission: true
+    ally_enable: true
+  FactionsUUID:
+    enable: false
+    pickup_only_member: true
+    revive_only_member: true
+    ignore_permission: true
+    ally_enable: true
+  BetterTeams:
+    enable: false
+    pickup_only_member: true
+    revive_only_member: true
+    ignore_permission: true
+    ally_enable: true
+  Lands:
+    enable: false
+    pickup_in_war: true
+    revive_in_war: true
+    revive_ally: true
+    revive_enemy: false
+    pickup_ally: true
+    pickup_enemy: false
+    steal_in_war: true
+    steal_ally: false
+    steal_enemy: false
+  ProjectKorra:
+    enable: false
+    downed_use_ability: false
+  GriefPrevention:
+    enable: false
+    end_siege_on_downed: false
+  PlasmoVoice:
+    enable: false
+    downed_can_speak: false
+  Duels:
+    enable: false
+    downed_in_game: false
+  CombatLogX:
+    enable: false
+    revive_in_combat: true
+    pickup_in_combat: false
+  DeluxeCombat:
+    enable: false
+    revive_in_combat: true
+    pickup_in_combat: false
+  PartyGames:
+    enable: false
+    can_down_in_arena: false
+  UltimateClans:
+    enable: false
+    revive_ally: true
+    pickup_ally: true
+    revive_rival: false
+    pickup_rival: false
+  WorldGuard:
+    downable_flag_default: true
+revive_options:
+  price:
+    mode: ITEM
+    amount: 1
+    options:
+      has_lore_line: put here the text of one of the lines of the lore of your item
+      material: Diamond
+    enabled: false
+    ignore_permission: true
+  reviver_speed:
+    enabled: false
+    mode: rank
+    values:
+    - 'default: 1'
+    - 'vip: 2'
+    - 'doctor: 5'
+  downed_reliving_count:
+    enabled: false
+    mode: rank
+    values:
+    - 'default: 1'
+    - 'vip: 2'
+sql_config:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: minecraft
+  user: root
+  password: ''
+vanilla_teams_config:
+  enabled: false
+  ignore_permission: true
+  pickup_only_member: true
+  revive_only_member: true
+items_options:
+  no_downed_items:
+    enable: false
+plugin_config:
+  metric: true
+  update_message: true

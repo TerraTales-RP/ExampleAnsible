@@ -1,0 +1,29 @@
+#Location of Nether Forge.
+forge_location:
+  x: 0
+  y: 64
+  z: 0
+  world: "world_nether"
+#Enable netherite crafting in regular benches.
+netherite_crafting: false
+cooldowns:
+  #All are in seconds.
+  turtle_master: 60
+  ender_pearls: 15
+  golden_apple: 60
+  enchanted_golden_apple: 300
+#Combat Tag Plus Compatibility (Unimplemented)
+ctpluscompat: false
+#Disables Chests in war status. (relies on lands.)
+angelchestdisable: true
+tweaks:
+  #Removes harming pots & arrows
+  remove_harming: true
+  # Disables milk in the nether.
+  disableNetherMilk: true
+nether_rtp:
+  enabled: true
+  minRadius: 1000
+  maxRadius: 5000
+  # This world value is also used by milk disable
+  world: "world_nether"

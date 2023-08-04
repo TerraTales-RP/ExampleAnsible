@@ -1,0 +1,3 @@
+- Fixed: [#2317] lands shouldn't have a category set by default
+- Fixed: [#2317] /l top balance placeholder
+- Fixed: [#2327] error at capturing area on paper
