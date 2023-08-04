@@ -3,6 +3,7 @@
 
 ### Overview
 This is the TerraTales Ansible Playbook. We use this to manage incoming and outgoing plugin changes, and they are loaded automatically at server restart.
+Installation information is located at [INSTALL.MD](https://github.com/TerraTales-RP/ExampleAnsible/blob/main/INSTALL.MD)
 
 ### Functionality
 - Checks Important Tasks to ensure they are running, like NGINX and Wings (Pterodactyl Docker Containers)
